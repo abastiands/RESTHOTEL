@@ -1,0 +1,606 @@
+:root {
+    --black: #111111;
+    --gray: #2f2f2f;
+    --white: #f6f6f6;
+    --gold: #ffcb74;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    line-height: 19px;
+}
+
+.bgBlack {
+    background-color: var(--black);
+}
+
+.bgGray {
+    background-color: var(--gray);
+}
+
+.bgWhite {
+    background-color: var(--white);
+}
+
+.bgGold {
+    background-color: var(--gold);
+}
+
+.fontBlack {
+    color: var(--black);
+}
+
+.fontGray {
+    color: var(--gray);
+}
+
+.fontWhite {
+    color: var(--white);
+}
+
+.fontGold {
+    color: var(--gold);
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.fontItalic {
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 60px;
+}
+
+/* custom css */
+/* start heading */
+.header {
+    font-family: Inter, sans-serif;
+}
+
+.jumbotron {
+    width: 100%;
+    max-height: max-content;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 1154px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.4em;
+}
+
+.navbarList {
+    margin-left: 128px;
+}
+
+.listItems {
+    display: flex;
+    font-size: 1.6em;
+}
+
+.listContent {
+    margin-right: 24px;
+}
+
+.listContent:hover {
+    border-bottom: 3px solid #ffcb74;
+}
+
+.signUp {
+    border: 1px solid var(--white);
+}
+
+.signUp:hover {
+    background-color: var(--gold);
+    border: 1px solid var(--gold);
+    color: var(--black);
+}
+
+.signIn {
+    margin-left: 8px;
+    border: 1px solid var(--gold);
+}
+
+.signUp,
+.signIn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.jumbotronContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jumbotronTitle {
+    max-width: 371px;
+}
+
+.title {
+    font-size: 4.8em;
+}
+
+.jumbotronDescription {
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 1.6em;
+    opacity: 80%;
+}
+
+.jumbotronLink {
+    margin-top: 34px;
+}
+
+.bookNow {
+    padding: 14.5px 24.5px;
+    border-radius: 12px;
+    font-size: 1.6em;
+}
+
+.jumbotronImagesWrapper {
+    width: 688px;
+    background: linear-gradient(to right, #FFD690, #FFCB74);
+    border-radius: 24px;
+    padding: 16px 24px;
+}
+
+.jumbotronImage {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+    max-width: 100%;
+}
+
+/* end heading */
+/* start main */
+.about {
+    width: 100%;
+    height: 613px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImages {
+    max-width: 762px;
+    margin: auto;
+}
+
+.aboutImgWrapper {
+    width: 400px;
+    margin: auto;
+}
+
+.aboutImage {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutTitle {
+    font-size: 4.2em;
+    margin: 18px 0;
+}
+
+.aboutDescription {
+    font-family: Roboto, sans-serif;
+    font-size: 2.6em;
+    /* width: 727px; */
+}
+
+.aboutDescription::before,
+.aboutDescription::after {
+    content: "\0022";
+}
+
+.rooms {
+    width: 100%;
+    height: 574px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roomsTitle {
+    font-size: 3.6em;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.roomWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roomItem {
+    width: 360px;
+    height: 360px;
+    position: relative;
+}
+
+.roomImageWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.roomImage {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.roomOpacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 251, 251, 0%), rgba(0, 0, 0, 35%));
+    border-radius: 12px;
+}
+
+.roomDescription {
+    line-height: normal;
+    font-size: 2.4em;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.contact {
+    width: 100%;
+    height: 629px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 3.6em;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.contactWrapper {
+    display: flex;
+}
+
+.contactLeft {
+    flex-basis: 50%;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contactIcon {
+    width: 24px;
+    background-color: #f6f6f6;
+    margin-right: 12px;
+}
+
+.contactDescription {
+    font-size: 1.8em;
+    line-height: 21px;
+}
+
+.contactRight {
+    flex-basis: 50%;
+}
+
+.formGroup {
+    margin-bottom: 24px;
+}
+
+.formGroup:first-child,
+.formGroup:nth-child(2) {
+    width: 47%;
+    display: inline-block;
+}
+
+.formGroup:first-child {
+    margin-right: 32px;
+}
+
+.labelInput,
+.labelTextarea {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.labelInput::placeholder,
+.labelTextarea::placeholder {
+    color: rgba(17, 17, 17, 35%);
+}
+
+.labelTextarea {
+    height: 150px;
+}
+
+.labelItem {
+    display: block;
+    font-size: 1.8em;
+    line-height: 21px;
+    margin-bottom: 6px;
+}
+
+.labelButton {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.6em;
+}
+
+/* end main */
+/* start footer */
+.copyright {
+    font-size: 1.8em;
+    line-height: 21px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+/* end footer */
+/* media query */
+@media (max-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+
+    .jumbotronImagesWrapper {
+        width: 400px;
+    }
+
+    .roomItem {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contactDescription {
+        font-size: 1.6em;
+    }
+
+    .formGroup:first-child,
+    .formGroup:nth-child(2) {}
+
+    .formGroup:first-child {
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .listItems {
+        font-size: 1.4em;
+    }
+
+    .signUp,
+    .signIn {
+        padding: 3px 6px;
+    }
+
+    .jumbotronTitle {
+        max-width: 240px;
+    }
+
+    .title {
+        font-size: 3.6em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .bookNow {
+        font-size: 1.4em;
+        padding: 7px 14px;
+    }
+
+    .jumbotronDescription {
+        margin-top: 5px;
+    }
+
+    .jumbotronLink {
+        margin-top: 16px;
+    }
+
+    .about,
+    .rooms,
+    .contact {
+        height: max-content;
+        padding: 50px 0;
+    }
+
+    .aboutImgWrapper {
+        width: 320px;
+    }
+
+    .aboutTitle {
+        font-size: 3.2em;
+    }
+
+    .aboutDescription {
+        font-size: 1.8em;
+    }
+
+    .roomsTitle {
+        font-size: 3.2em;
+        margin-bottom: 24px;
+    }
+
+    .roomItem {
+        width: 230px;
+        height: 230px;
+    }
+
+    .roomDescription {
+        font-size: 2em;
+        bottom: 10px;
+    }
+
+    .contactTitle {
+        font-size: 3.2em;
+        margin-bottom: 24px;
+    }
+
+    .contactDescription {
+        font-size: 1.2em;
+    }
+
+    .labelItem {
+        font-size: 1.6em;
+    }
+
+    .copyright {
+        font-size: 1.4em;
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .jumbotron {
+        padding-bottom: 25px;
+    }
+
+    .container {
+        width: 600px;
+    }
+
+    .navbarList {
+        margin-left: 32px;
+    }
+
+    .jumbotronTitle,
+    .jumbotronDescription {
+        max-width: 180px;
+    }
+
+    .title {
+        font-size: 2.4em;
+        line-height: 32px;
+    }
+
+    .jumbotronImagesWrapper {
+        width: 320px;
+    }
+
+    .about,
+    .rooms,
+    .contact {
+        padding: 25px;
+    }
+
+    .aboutImgWrapper {
+        width: 240px;
+    }
+
+    .aboutTitle {
+        font-size: 2.8em;
+        margin: 8px 0;
+        line-height: 32px;
+    }
+
+    .aboutDescription {
+        font-size: 1.2em;
+    }
+
+    .roomsTitle {
+        font-size: 2.8em;
+        margin-bottom: 12px;
+        line-height: 32px;
+    }
+
+    .roomItem {
+        width: 180px;
+        height: 180px;
+    }
+
+    .roomDescription {
+        font-size: 1.6em;
+    }
+
+    .contactTitle {
+        font-size: 2.8em;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .formGroup {
+        margin-bottom: 12px;
+    }
+
+    .labelItem {
+        font-size: 1.2em;
+        line-height: 6px;
+    }
+
+    .labelTextarea {
+        height: 100px;
+    }
+
+    .copyright {
+        font-size: 1em;
+    }
+}

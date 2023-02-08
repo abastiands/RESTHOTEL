@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESTHOTEL</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="jumbotron bgBlack">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbarLeft">
+                        <div class="navbarLogo">
+                            <a class="logo fontGold fontBold" href="#">RESTHOTEL</a>
+                        </div>
+                        <div class="navbarList">
+                            <ul class="listItems">
+                                <li>
+                                    <a class="listContent fontWhite fontBold" href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a class="listContent fontWhite fontBold" href="#">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a class="listContent fontWhite fontBold" href="#">ROOMS</a>
+                                </li>
+                                <li>
+                                    <a class="listContent fontWhite fontBold" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbarRight">
+                        <ul class="listItems">
+                            <li>
+                                <a class="signUp fontWhite fontBold" href="#">SIGN UP</a>
+                            </li>
+                            <li>
+                                <a class="signIn fontBlack fontBold bgGold" href="#">SIGN IN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="jumbotronContent">
+                    <div class="jumbotronContentTitle">
+                        <div class="jumbotronTitle">
+                            <h1 class="title fontWhite fontBold">
+                                MAKE YOUR <span class="fontGold">REST TIME</span> COMFORTABLE
+                            </h1>
+                        </div>
+                        <div class="jumbotronDescription">
+                            <p class="description fontWhite">
+                                There are various types of comfortable rooms to use
+                            </p>
+                        </div>
+                        <div class="jumbotronLink">
+                            <a class="bookNow fontBlack fontBold bgGold" href="#">BOOK NOW</a>
+                        </div>
+                    </div>
+                    <div class="jumbotronImages">
+                        <div class="jumbotronImagesWrapper">
+                            <img class="jumbotronImage" src="./assets/images/bedroom2.jpg" alt="Bedroom Image"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="about" class="about bgGray">
+            <div class="container">
+                <article class="aboutImages">
+                    <div class="aboutImgWrapper">
+                        <img class="aboutImage" alt="Lobby Image" src="./assets/images/lobby1.jpg" loading="lazy" />
+                    </div>
+                    <h2 class="aboutTitle fontGold">RESTHOTEL</h2>
+                    <p class="aboutDescription fontWhite fontItalic">
+                        Rest hotels are the best hotels in Indonesia that offer a variety
+                        of luxurious facilities and also serve delicious food so that
+                        customers are comfortable staying here.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="rooms" class="rooms bgBlack">
+            <div class="container">
+                <h2 class="roomsTitle fontWhite fontBold">TYPE ROOMS</h2>
+                <div class="roomWrapper">
+                    <article class="roomItem">
+                        <div class="roomImageWrapper">
+                            <img class="roomImage" src="./assets/images/bedroom1.jpg" alt="Bedroom" loading="lazy" />
+                        </div>
+                        <div class="roomOpacity"></div>
+                        <p class="roomDescription fontWhite">TYPE DELUXE</p>
+                    </article>
+                    <article class="roomItem">
+                        <div class="roomImageWrapper">
+                            <img class="roomImage" src="./assets/images/bedroom2.jpg" alt="Bedroom" loading="lazy" />
+                        </div>
+                        <div class="roomOpacity"></div>
+                        <p class="roomDescription fontWhite">TYPE EXCLUSIVE</p>
+                    </article>
+                    <article class="roomItem">
+                        <div class="roomImageWrapper">
+                            <img class="roomImage" src="./assets/images/bedroom3.jpg" alt="Bedroom" loading="lazy" />
+                        </div>
+                        <div class="roomOpacity"></div>
+                        <p class="roomDescription fontWhite">TYPE AWESOME</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact bgGray">
+            <div class="container">
+                <h2 class="contactTitle fontWhite fontBold">CONTACT</h2>
+                <div class="contactWrapper">
+                    <div class="contactLeft">
+                        <div class="contactItem">
+                            <img class="contactIcon" src="./assets/icons/map.svg" alt="Map Icon" loading="lazy" />
+                            <p class="contactDescription fontWhite">
+                                Jl. Surabaya sukses selalu No. 1, Surabaya, Jawa Timur
+                            </p>
+                        </div>
+                        <div class="contactItem">
+                            <img class="contactIcon" src="./assets/icons/phone.svg" alt="Phone Icon" loading="lazy" />
+                            <p class="contactDescription fontWhite">+62 1234567890</p>
+                        </div>
+                        <div class="contactItem">
+                            <img class="contactIcon" src="./assets/icons/mail.svg" alt="Mail Icon" loading="lazy" />
+                            <p class="contactDescription fontWhite">email@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contactRight">
+                        <form class="form">
+                            <div class="formGroup">
+                                <label class="labelItem fontGold" for="name">NAME</label>
+                                <input class="labelInput" type="text" id="name" name="name"
+                                    placeholder="Insert name..." />
+                            </div>
+                            <div class="formGroup">
+                                <label class="labelItem fontGold" for="email">EMAIL</label>
+                                <input class="labelInput" type="email" id="email" name="email"
+                                    placeholder="Insert email..." />
+                            </div>
+                            <div class="formGroup">
+                                <label class="labelItem fontGold" for="subject">SUBJECT</label>
+                                <input class="labelInput" type="text" id="subject" name="subject"
+                                    placeholder="Insert subject..." />
+                            </div>
+                            <div class="formGroup">
+                                <label class="labelItem fontGold" for="description">DESCRIPTION</label>
+                                <textarea class="labelTextarea" id="description" name="description"
+                                    placeholder="Insert description..."></textarea>
+                            </div>
+                            <button class="labelButton fontBlack bgGold" type="submit">
+                                SEND
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bgBlack">
+        <p class="copyright fontWhite">
+            Copyright &copy; 2023 Abastian Dwi Saputra. All Right Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
